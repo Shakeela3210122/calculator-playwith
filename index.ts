@@ -2,8 +2,8 @@
 import inquirer from "inquirer";
 const answer = await inquirer.prompt
     ([
-        { name: "firstNumber", type: "number", message: "Enter first number" },
-        { name: "secondNumber", type: "number", message: "Enter second number" },
+        { name: "firstNumber", type: "number", message: "Enter your first number" },
+        { name: "secondNumber", type: "number", message: "Enter your second number" },
 
         {
             name: "operator",
@@ -24,3 +24,5 @@ else if (answer.operator === "Multipilication") { console.log(answer.firstNumber
 else if (answer.operator === "Division") { console.log(answer.firstNumber / answer.secondNumber); }
 
 else { "plese select valid operator" };
+
+console.log( "THE END");
